@@ -105,12 +105,10 @@ input::placeholder {
   
   .post {
     background-color: var(--card-bg);
-    //max-width: 950px;
-    /0width: 100%;
     margin: 0 auto 1rem auto;
     padding: 0 0.5rem 1rem 0.5rem;
     border-radius: 5px;
-    //box-shadow: -0 -3px -10px rgba(0,0,0,0.08);
+    box-shadow: -0 -3px -10px rgba(0,0,0,0.08);
     border: 2px solid var(--accent);
     display: block;
   }
