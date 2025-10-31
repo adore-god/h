@@ -106,7 +106,7 @@ input::placeholder {
   .post {
     background-color: var(--card-bg);
     margin: 0 auto 1rem auto;
-    padding: 0 0.5rem 1rem 0.5rem;
+    padding: 0 0 1rem 0rem;
     border-radius: 5px;
     box-shadow: -0 -3px -10px rgba(0,0,0,0.08);
     border: 2px solid var(--accent);
@@ -115,21 +115,23 @@ input::placeholder {
 
   .post img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0px;
     margin: 0;
-    padding:0;
-    vertical-align: middle;
-    display: block 
+    padding:1rem 0 0 0;
+    vertical-align: bottom;
+    display: block;
+    border:none
   }
  
   .title {
     display:none;
-    height:0;
+    line-height:0px;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--accent);
-    margin-bottom: 0;
+    margin: 0;
+    padding:0;
     font-family: 'Cinzel', serif;
   }
 
@@ -140,7 +142,7 @@ input::placeholder {
     color: var(--accent);
     line-height:1;
     text-align:center;
-    padding: 0 0.8rem 0.4rem
+    padding: 1.4rem 0.8rem 0.8rem
   }
 
 
