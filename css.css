@@ -114,10 +114,10 @@ input::placeholder {
   }
 
   .post img {
-    width: 100%;
+    width: 95%;
     border-radius: 0px;
-    margin: 0;
-    padding:1rem 0 0 0;
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
     vertical-align: bottom;
     display: block;
     border:none
@@ -137,12 +137,12 @@ input::placeholder {
 
   .caption {
     font-size: 1rem;
-    margin-top: 0rem;
+    margin: 0 auto;
     font-family: 'Cinzel', serif;
     color: var(--accent);
     line-height:1;
     text-align:center;
-    padding: 1.4rem 0.8rem 0.8rem
+    padding: 1.4rem 1rem 0.8rem
   }
 
 
@@ -150,6 +150,7 @@ input::placeholder {
     line-height: 1;
     color: var(--accent);
     font-family: 'Lato', serif;
+    padding: 0 4rem;
   }
   
   footer {
