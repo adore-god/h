@@ -123,7 +123,10 @@ input::placeholder {
     display: block;
     border:none;
   }
- 
+ .full {
+ 	padding:0 0 0 0 !important;
+     width:100% !important 
+ }
   .title {
     display:none;
     line-height:0px;
