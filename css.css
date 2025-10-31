@@ -34,8 +34,8 @@
  a {
     color: var(--link);
     text-decoration: underline dotted;
-  text-decoration-color: rgba(0, 0, 0, 1.7);
-  text-decoration-thickness: 0.7px;
+  text-decoration-color: var(--link);
+  text-decoration-thickness: 0.8px;
  }
   header {
     line-height:1;
