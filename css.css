@@ -20,18 +20,15 @@
   }
   
   body, section {
-     margin: 0;
-     padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+  
   #outer {
     margin: 0 auto;
     width:90%;
-  }
-  #page-outer {
-    margin: 0 auto;
-    width:70%;
-    padding-top: 2rem
+    //max-width:600px;
   }
   
  a {
@@ -58,37 +55,15 @@
     color: var(--accent);
     text-transform: uppercase;
   }
-  
-  header h1 a {
-  text-decoration:none
-}
- 
   header h2 {
-    font-weight: 600;
-    line-height:0.5;
+  	line-height:0.5;
     font-family: 'Cinzel', serif;
     font-size: 0.8rem;
     margin: 0;
     padding:0;
-    letter-spacing: 1em;
+    letter-spacing: 1.03em;
     color: var(--accent);
     text-transform: uppercase;
-  }
-  h3 {
-    margin: 1rem 0;
-  }
-  
-  nav {
-    font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin: 1.2rem;
-    letter-spacing: 0.4rem;
-    color: var(--accent);
-    text-transform: uppercase;
-  }
-  nav a {
-  	text-decoration: none;
   }
   
 input {
