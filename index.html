@@ -118,24 +118,40 @@ If then you received it, why do you boast as if you did not receive it?" <small>
   &copy; HNNH Studio. All rights reserved.
 </footer>
 <script>
-  const searchInput = document.getElementById('search');
-  const posts = document.querySelectorAll('.post');
+const searchInput = document.getElementById('search');
+const posts = document.querySelectorAll('.post');
+let debounceTimer;
 
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
 
-    posts.forEach(post => {
-      const classes = post.className.toLowerCase();
-      const content = post.textContent.toLowerCase();
-
-      if (query === "" || classes.includes(query) || content.includes(query)) {
-        post.style.display = "block";
-      } else {
-        post.style.display = "none";
-      }
-    });
+  // Show/hide posts
+  posts.forEach(post => {
+    const classes = post.className.toLowerCase();
+    const content = post.textContent.toLowerCase();
+    if (query === "" || classes.includes(query) || content.includes(query)) {
+      post.style.display = "block";
+    } else {
+      post.style.display = "none";
+    }
   });
+
+  // Debounce GA4 event (fires 500ms after last keystroke)
+  clearTimeout(debounceTimer);
+  if(query.trim() !== "") {
+    debounceTimer = setTimeout(() => {
+      // Redact emails/phone numbers
+      let safeQuery = query.replace(/\S+@\S+\.\S+/g,'[redacted]').replace(/\+?\d[\d\-\s]{6,}/g,'[redacted]');
+      // Send search event to GA4
+      window.gtag && gtag('event', 'search', {
+        search_term: safeQuery,
+        method: 'site_search'
+      });
+    }, 500);
+  }
+});
 </script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-25VSZ7TLWL"></script>
 <script>
