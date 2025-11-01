@@ -82,7 +82,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.7rem;
     font-weight: 600;
-    margin: 1.2rem;
+    margin-top: 1.4rem;
     letter-spacing: 0.4rem;
     color: var(--accent);
     text-transform: uppercase;
@@ -189,4 +189,5 @@ input::placeholder {
     color: var(--accent);
     border-top: 1px solid #ddd;
     margin-top: 2rem;
+    text-transform:uppercase
   }
