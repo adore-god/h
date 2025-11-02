@@ -163,7 +163,11 @@ input::placeholder {
     padding:0;
     font-family: 'Cinzel', serif;
   }
-
+  
+  .key {
+    display:none;
+  }
+  
   .caption {
     font-size: 1rem;
     margin: 0 auto;
