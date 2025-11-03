@@ -5,7 +5,7 @@
 html, body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 140px;
+  scroll-padding-top: 160px;
 }
   :root {
     --bg: #fff;
@@ -61,10 +61,10 @@ html, body {
 }
   header h1 {
     font-family: 'Cinzel', serif;
-    font-size: 1.7rem;
-    margin: 0;
+    font-size: 1.9rem;
+    margin: 1rem 0 0;
     padding:0;
-    line-height:1;
+    line-height:0.3;
     letter-spacing: 0.03em;
     color: var(--accent);
     text-transform: uppercase;
@@ -78,10 +78,10 @@ html, body {
     font-weight: 600;
     line-height:0.5;
     font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     margin: 0;
-    padding-bottom: 1rem;
-    letter-spacing: 1em;
+    padding-bottom: 0.7rem;
+    letter-spacing: 0.7em;
     color: var(--accent);
     text-transform: uppercase;
     background-color: var(--bg);
@@ -94,6 +94,7 @@ html, body {
     font-family: 'Cinzel', serif;
     font-size: 0.5rem;
     font-weight: 600;
+    padding-top: 0.4rem;
     padding-bottom: 1rem;
     letter-spacing: 0.4rem;
     color: var(--accent);
@@ -152,8 +153,8 @@ input::placeholder {
   .post {
   scroll-snap-align: start;  
     background-color: var(--card-bg);
-    margin: 0 auto 1rem auto;
-    padding: 0 0 1rem 0rem;
+    margin: 0 auto 2.7rem auto;
+    padding: 0 0 0.5rem 0rem;
     border-radius: 5px;
     box-shadow: -0 -3px -10px rgba(0,0,0,0.08);
     border: 2px solid var(--accent);
@@ -223,3 +224,14 @@ input::placeholder {
     margin-top: 2rem;
     text-transform:uppercase
   }
+
+/************************************************************
+RESPONSIVE SECTION                      ************************************************************/
+
+
+@media only screen and (min-width: 900px) {
+  .caption {
+    font-size: 35px;
+    padding: 6rem 6rem;
+  }
+}
