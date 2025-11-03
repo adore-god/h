@@ -170,6 +170,7 @@ input::placeholder {
     vertical-align: bottom;
     display: block;
     border:none;
+    max-width: 100%;
   }
  .full {
  	padding:0 0 0 0 !important;
