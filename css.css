@@ -279,7 +279,11 @@ RESPONSIVE
   }
 
   html, body {
-    scroll-padding-top: 340px;
+    scroll-padding-top: 360px;
+  }
+
+  #main {
+  margin-top: 360px;
   }
 
   input {
