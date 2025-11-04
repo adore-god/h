@@ -37,7 +37,7 @@ LAYOUT CONTAINERS
 ************************************************************/
 #outer {
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 
 #page-outer {
@@ -48,6 +48,7 @@ LAYOUT CONTAINERS
 
 #main {
   margin-top: 210px;
+  margin-right: 4px
 }
 
 /************************************************************
@@ -182,7 +183,7 @@ POSTS & IMAGES
 }
 
 .post img {
-  width: 95%;
+  width: 100;
   height: auto;
   margin: 0 auto;
   padding: 1rem 0 0 0;
