@@ -116,7 +116,7 @@ html, body {
 input {
   border: none;
   border-bottom: 2px solid var(--accent);
-  background: transparent;
+  background: var(--bg);
   outline: none;
   padding: 0 0;
   margin: 0 auto;
