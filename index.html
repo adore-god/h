@@ -1010,6 +1010,42 @@ searchInput.addEventListener('input', () => {
 searchInput.addEventListener('input', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// event track
+
+const tracked = new Set();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      const titleEl = entry.target.querySelector('.title');
+      if (!titleEl) return;
+
+      const postId = titleEl.textContent.trim();
+
+      if (!tracked.has(postId)) {
+        tracked.add(postId);
+
+        // GA4 Event
+        gtag('event', 'post_scroll_view', {
+          post_title: postId,
+          event_category: 'engagement',
+          event_label: 'Scroll Snap Post Viewed'
+        });
+
+        console.log(`Tracked scroll view: ${postId}`);
+      }
+    }
+  });
+}, {
+  root: null,
+  threshold: 0.65 // 65% visible = snapped into view
+});
+
+posts.forEach(post => observer.observe(post));
+
+
 </script>
 
 
