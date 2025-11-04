@@ -5,7 +5,7 @@
 html, body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 160px;
+  scroll-padding-top: 200px;
 }
   :root {
     --bg: #fff;
@@ -51,20 +51,19 @@ html, body {
   top: 0;          
   left: 0;
   background-color: var(--bg);
-  height: 100px;  
   line-height: 1;
   text-align: center;
   padding: 0rem 0 0; 
 }
 #main {
-  padding-top: 150px; 
+  padding-top: 2000px; 
 }
   header h1 {
     font-family: 'Cinzel', serif;
-    font-size: 1.9rem;
-    margin: 1rem 0 0;
-    padding:0;
-    line-height:0.3;
+    font-size: 2.4rem;
+    margin: 0.3rem 0 0.3rem;
+    padding:0 1rem;
+    line-height:0.9;
     letter-spacing: 0.03em;
     color: var(--accent);
     text-transform: uppercase;
@@ -74,17 +73,17 @@ html, body {
   text-decoration:none
 }
  
-  header h2 {
+  .hdes {
     font-weight: 600;
-    line-height:0.5;
+    line-height:1.3;
     font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin: 0;
     padding-bottom: 0.7rem;
-    letter-spacing: 0.7em;
+    letter-spacing: 0.5em;
     color: var(--accent);
     text-transform: uppercase;
-    background-color: var(--bg);
+    
   }
   h3 {
     margin: 1rem 0 0;
@@ -92,11 +91,11 @@ html, body {
   
   nav {
     font-family: 'Cinzel', serif;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    padding-top: 0.4rem;
+    padding-top: 0.6rem;
     padding-bottom: 1rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
     color: var(--accent);
     background-color: var(--bg);
     text-transform: uppercase;
@@ -193,7 +192,7 @@ input::placeholder {
   }
   
   .caption {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin: 0 auto;
     font-family: 'Cinzel', serif;
     color: var(--accent);
@@ -231,8 +230,42 @@ RESPONSIVE SECTION                      ****************************************
 
 
 @media only screen and (min-width: 900px) {
+	
   .caption {
     font-size: 35px;
     padding: 6rem 6rem;
   }
+  header {
+    padding:2rem 0
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+  .hdes {
+    font-size: 2.5rem;
+  }
+  nav {
+    font-size: 2rem;
+}
+  html, body {
+    scroll-padding-top: 340px;
+  }
+  
+  #sb {
+  	
+}
+
+input {
+font-size: 2rem;
+}
+
+input::placeholder {
+	font-size: 2rem;
+}
+
+#search {
+font-size: 2rem;
+height:80px;
+width: 600px;
+max-width: 600px;
 }
