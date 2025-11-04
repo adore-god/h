@@ -977,22 +977,11 @@ searchInput.addEventListener('input', () => {
 
 </script>
 <script>
-
-let typingTimer;
-const typingDelay = 200; // time in ms to wait after typing stops
-
 searchInput.addEventListener('input', () => {
-  clearTimeout(typingTimer);
-  typingTimer = setTimeout(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, typingDelay);
-});
-
-// Optional: cancel scroll if user starts typing again quickly
-searchInput.addEventListener('keydown', () => {
-  clearTimeout(typingTimer);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
 
 </div>
 </body>
