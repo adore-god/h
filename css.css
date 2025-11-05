@@ -141,7 +141,10 @@ h2.page {
 	font-size: 1.6em;
 	vertical-align: baseline;
     padding: 0 0 0 10px ;
-    opacity:0.4
+    opacity:0.4;
+    position:fixed;
+    top: 5px;
+    right:15px;
 	}
 
 /************************************************************
