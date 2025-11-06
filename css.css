@@ -226,10 +226,10 @@ POSTS & IMAGES
 }
 
 .post img {
-  width: 100;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 1rem 0 0 0;
+  padding: rem 0 0 0;
   display: block;
   border-radius: 5px;
   vertical-align: bottom;
