@@ -348,48 +348,16 @@ searchInput.addEventListener('input', () => {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      // 1. The main entity: Your Image Gallery
-      "@type": "ImageGallery",
-      "@id": "https://hnnh.studio/#storyboard-gallery", // Give the gallery an ID
-      "name": "HNNH Studio Storyboard",
-      "description": "A gallery of images and captions, with companion links providing expanded explanations, exploring Bible symbolism and psychological insights through the teachings of Neville Goddard.",
-      "url": "https://hnnh.studio",
-      "creator": {
-        "@type": "Person",
-        "name": "HNNH"
-      },
-      
-      // Link the concepts using their @id
-      "about": { "@id": "https://hnnh.studio/source/holy-bible" }, // The primary subject matter
-      "mentions": { "@id": "https://hnnh.studio/source/law-of-assumption" } // The concept discussed
-      
-      // (This is where your 'hasPart' ImageObjects would go, linking to the images themselves)
-    },
-    
-    // 2. Your Refined Law of Assumption CreativeWork
-    {
-      "@type": ["CreativeWork", "Thing"], // Thing is a bit redundant but harmless
-      "@id": "https://hnnh.studio/source/law-of-assumption", // Using your @id pattern
-      "name": "Law of Assumption",
-      "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
-    },
-    
-    // 3. Your Refined Holy Bible Source
-    {
-      "@type": "CreativeWork", // You could also use "Book" here for specificity
-      "@id": "https://hnnh.studio/source/holy-bible",
-      "name": "The Holy Bible",
-      "author": { "@type": "Person", "name": "Various Prophets and Apostles" },
-      "inLanguage": "en",
-      "description": "The foundational religious and spiritual text used as the primary source for all teaching on this site."
-    }
-  ]
-}
-</script>
+  "@type": "ImageGallery",
+  "name": "HNNH Studio Storyboard",
+  "description": "A gallery of images and captions, with companion links providing expanded explanations, exploring Bible symbolism and psychological insights through the teachings of Neville Goddard.",
+  "url": "https://hnnh.studio",
+  "creator": {
+    "@type": "Person",
+    "name": "HNNH"
+  }
+},
 
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
