@@ -9,7 +9,7 @@ RESET & BASE STYLES
 html, body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 210px;
+  scroll-padding-top: 220px;
 }
 
 /************************************************************
@@ -70,7 +70,7 @@ LAYOUT CONTAINERS
 }
 
 #main {
-  margin-top: 210px;
+  margin-top: 220px;
   margin-right: 4px
 }
 
@@ -126,7 +126,7 @@ h2.page {
   font-weight: 600;
   line-height: 1.3;
   font-family: 'Cinzel', serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
   padding-bottom: 0.7rem;
   letter-spacing: 0.5em;
@@ -170,6 +170,7 @@ nav a {
   padding: 0;
   background-color: var(--bg);
   width:100%;
+  opacity: 0.6
 }
 
 /************************************************************
@@ -242,10 +243,17 @@ POSTS & IMAGES
   width: 100% !important;
 }
 
-.title, .key {
-  display: none;
+.title {
+  font-size: 0.8rem; 
+  line-height:0.8;
+  letter-spacing:-0.1px;
+  margin: 0rem auto 0.4rem auto;
+  text-align: center;
 }
-
+.key {
+  display: none;
+  }
+  
 .caption {
   scroll-snap-align: start;
   position: relative;
