@@ -1294,7 +1294,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
 
-      const titleEl = entry.target.querySelector('.title');
+      const titleEl = entry.target.querySelector('.post');
       if (!titleEl) return;
 
       const postId = titleEl.textContent.trim();
@@ -1318,7 +1318,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 posts.forEach(post => observer.observe(post));
-
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-25VSZ7TLWL"></script>
 <script>
