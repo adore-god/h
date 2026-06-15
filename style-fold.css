@@ -613,6 +613,7 @@ font-size: 0.7em;
 
 img.border {
 border: 1px solid #ddd;
+box-shadow: 0 2px 2px #ccc, 0 2px 2px #ccc;
 }
 
 img {
