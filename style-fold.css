@@ -412,11 +412,12 @@ a:hover {
 	}
 
 .amazon-promo {
+  background-color: #eee;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.45rem;
-  padding: 1.25rem 0;
+  padding: 2em;
   max-width: 100%;
   margin: 1.5rem 0;
   /* opacity removed from here */
@@ -610,6 +611,10 @@ font-size: 0.7em;
   font-style: normal 
 	}
 
+img.border {
+border: 1px solid #ddd;
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -619,7 +624,7 @@ img {
   height:auto;
   padding: 0;
   overflow: hidden;
-  border: 1.5px solid var(--ink);
+  
   border-radius: 20px;
 }
 
