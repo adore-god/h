@@ -163,13 +163,12 @@ input[type="text"]:focus {
 }
 
 .footer {
-  margin: 4em auto 30px;
+  margin: 5em auto;
   text-align: center;
-  max-width: 800px;
-  width: 87%;
-  font-size: 0.8em; 
   display: block;
   font-weight:500;
+ overflow:hidden;
+ padding-bottom:1em;
 }
 
 .sclPage li a {
